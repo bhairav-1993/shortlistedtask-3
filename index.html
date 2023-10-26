@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
+    <style>
+        .first-page{
+            display: flex;
+            
+        }
+        .left-side{
+            background-color: rgb(85, 56, 141);
+            display: flex;
+            width: 45%;
+            height: 700px;
+           
+        }
+        .right-side{
+            display: flex;
+            background-color: rgb(146, 144, 148);
+            height: 700px;
+            width: 60%;
+          
+            padding-left: 120px;
+        }
+        .image2{
+            margin-left: -50px;
+            margin-top: 100px;
+        }
+        .image1{
+            
+            margin-top: 100px;
+        }
+        .first-page-info{
+            color: #fff;
+            height: 350px;
+            width: 350px;
+            background-color: rgb(85, 56, 141);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 400px;
+            top: 50px;
+            border-radius: 50%;
+        }
+        .first-page-info h1{
+            font-size: 50px;
+            position: absolute;
+            left: -100px;
+         
+        }
+        .first-page-info h4{
+            position: absolute;
+            top: 200px;
+            font-size: 27px;
+            left: -50px;
+        }
+        .first-page-logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin-top: 200px;
+        }
+        .image3{
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+        .first-page-logo h1{
+            font-size: 40px;
+          
+            font-weight: bold;
+
+        }
+        .first-page-logo p{
+            font-size: 20px;
+         
+           
+
+        }
+        .first-page-last-part{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+          
+        }
+        .info{
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .first-page-last-part h2{
+            color: #fff;
+            position: absolute;
+            left: 10px;
+            font-weight: 400;
+            font-size: 25px;
+        }
+        .first-page-last-part h3{
+            color: #fff;
+            position: absolute;
+            left: 500px;
+            letter-spacing: 7px;
+            font-weight: 300;
+        }
+        .second-page{
+            display: flex;
+        }
+        .left-side1{
+            background-color: rgb(63, 87, 222);
+            display: flex;
+            width: 45%;
+            height: 700px;
+        }
+        .first-page-info1{
+            color: #fff;
+            height: 350px;
+            width: 350px;
+            background-color: rgb(63, 87, 222);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 500px;
+            top: 50px;
+            border-radius: 50%;
+        }
+        .first-page-info1 h5{
+            position: relative;
+            left: -110px;
+        }
+        .first-page-info1 h1{
+            position: relative;
+            left: -70px;
+        }
+        .first-page-info1 h4{
+            position: relative;
+            left: 10px;
+        }
+        .info1{
+         margin-left: -50px;
+            margin-top: 20px;
+        }
+        .info1 h1{
+            font-size: 40px;
+
+        }
+        .info1 p{
+            font-size: 20px;
+            
+        }
+        .first-page-logo1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            color: #fff;
+            margin-top: 200px;
+            margin-left: -200px;
+        }
+        .images6{
+            margin-top: 200px;
+            margin-left: 60px;
+        }
+        .images5{
+            margin-left: 50px;
+        }
+        .right-side1{
+            display: flex;
+            background-color: rgb(21, 3, 83);
+            height: 700px;
+            width: 60%;
+          
+            padding-left: 120px;
+
+        }
+        .seven-page{
+            display: flex;
+        }
+        .left-side7{
+            background-color: rgb(53, 96, 171);
+            display: flex;
+            width: 45%;
+            height: 700px;
+        }
+        .first-page-info7{
+            color: #fff;
+            height: 350px;
+            width: 350px;
+            background-color: rgb(53, 96, 171);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 500px;
+            top: 50px;
+            border-radius: 50%;
+
+
+        }
+        
+        .first-page-logo7{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            color: #fff;
+            margin-top: 200px;
+            margin-left: -300px
+
+            
+        }
+        .info7{
+            margin-left: 1px;
+            margin-left: 40px;
+        }
+        .first-page-info7 h5{
+            position: relative;
+            left: -110px;
+        }
+        .first-page-info7 h1{
+            position: relative;
+            left: -110px;
+        }
+        .first-page-info7 h4{
+            position: relative;
+            left: 10px;
+        }
+        .right-side7{
+            background-color: #1da7a3;
+            height: 700px;
+            width: 65%;
+          padding-top: 150px;
+            padding-left: 120px;
+        }
+        .image7{
+            margin-left: 80px;
+            position: relative;
+            top: 150px;
+        }
+        .image8{
+            position: relative;
+            top: 150px;
+            margin-left: -100px;
+            margin-top: -120px;
+        }
+        .image9{
+            margin-left: 50px;
+            margin-top: -250px;
+            bottom: 190px;
+            left: 90px;
+        }
+        .image10{
+            position: relative;
+            bottom: 100px;
+            left: 100px;
+        }
+        .image11{
+            position: relative;
+            top: 60px;
+            left: 110px;
+        }
+        .image12{
+            position: relative;
+            top: -100px;
+            left: 110px;
+        }
+        .image13{
+            position: relative;
+            top: -50px;
+            left: 110px;
+        }
+        .image14{
+            position: relative;
+            top: -50px;
+            left: 10px;
+
+        }
+        .four-page{
+            position: relative;
+            display: flex;
+            
+        }
+        .image16{
+            
+           
+        margin-left: -120px;
+        }
+        .image17{
+            position: relative;
+            top: 50px;
+            left: 150px;
+        }
+        .image18{
+            position: relative;
+            top: -100px;
+            left: 120px;
+
+            
+        }
+        .image19{
+            position: relative;
+            top: 300px;
+            left: -600px;
+
+            
+        }
+        .image20{
+            position: relative;
+            top: 500px;
+            left: -420px;
+        }
+        .first-page-info3{
+            color: #fff;
+            height: 350px;
+            width: 350px;
+            background-color: rgb(12, 3, 53);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 500px;
+            top: 50px;
+            border-radius: 50%;
+
+        }
+        .left-side3{
+            background-color: rgb(12, 3, 53);
+            display: flex;
+            width: 45%;
+            height: 700px
+        }
+        .info3{
+            margin-left: -300px;
+            margin-top: 20px;
+
+        }
+        .image21{
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+        .image22{
+            position: relative;
+            top: 50px;
+            left: 100px;
+        }
+        .fourth-page{
+            display: flex;
+        }
+        .left-side4{
+            background-color: rgb(20, 26, 62);
+            display: flex;
+            width: 45%;
+            height: 700px;
+        }
+        .first-page-info4{
+            color: #fff;
+            height: 350px;
+            width: 350px;
+            background-color: rgb(20, 26, 62);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 500px;
+            top: 50px;
+            border-radius: 50%;
+        }
+        .first-page-info4 h5{
+            position: relative;
+            left: -110px;
+        }
+        .first-page-info4 h1{
+            position: relative;
+            left: -70px;
+        }
+        .first-page-info4 h4{
+            position: relative;
+            left: 10px;
+        }
+        .info1{
+         margin-left: -50px;
+            margin-top: 20px;
+        }
+        .info1 h1{
+            font-size: 40px;
+
+        }
+        .info1 p{
+            font-size: 20px;
+            
+        }
+        .first-page-logo1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            color: #fff;
+            margin-top: 200px;
+            margin-left: -200px;
+        }
+        .right-side4{
+            display: flex;
+            background-color: rgb(6, 1, 24);
+            height: 700px;
+            width: 60%;
+          
+            padding-left: 120px;
+
+        }
+        .right-side3{
+            display: flex;
+            background-color: rgb(38, 27, 81);
+            height: 700px;
+            width: 60%;
+          
+            padding-left: 120px;
+
+        }
+        .left-side8{
+            background-color: rgb(6, 137, 47);
+            display: flex;
+            width: 45%;
+            height: 700px;
+
+        }
+        .right-side8{
+            display: flex;
+            background-color: rgb(13, 190, 84);
+            height: 700px;
+            width: 60%;
+          
+            padding-left: 120px;
+
+        }
+        .first-page-info8{
+            color: #fff;
+            height: 350px;
+            width: 350px;
+            background-color: rgb(6, 137, 47);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 500px;
+            top: 50px;
+            border-radius: 50%;
+
+        }
+        .right-side12{
+            display: flex;
+            background-color: #fff;
+            height: 700px;
+            width: 60%;
+          
+            padding-left: 120px;
+
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="first-page">
+        <div class="left-side">
+            <div class="first-page-info">
+                <h1 data-aos="slide-right">25M+ Downloads</h1>
+                <h4 data-aos="slide-right">On appstore & google playstore</h4>
+            </div>
+            <div class="first-page-logo">
+                <img src="images/world-communication-awards-for-best-digital-experience.png" width="300px" class="image3" alt="3">
+           <div class="info">
+           <h1>ABC 123</h1>
+           <p>We are the best web developement <br> company in the world</p>
+        </div>
+            </div>
+            <div class="first-page-last-part">
+                <h2>View case study <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg> </h2>
+                <h3>SKIP</h3>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="images/nexgtv-entertainment-mobile-app-development.png"  data-aos="slide-down"  class="image1"  height="550px"  alt="1">
+            <img src="images/nexgtv-mobile-app-ui-design.png" class="image2"  data-aos="slide-down"   height="550px" alt="2">
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="second-page " >
+        <div class="left-side1">
+            <div class="first-page-info1">
+                <h5 data-aos="slide-right">The Next Big</h5>
+                <h1 data-aos="slide-right">Blockchain</h1>
+                <h4 data-aos="slide-right">Revolution</h4>
+            </div>
+            <div class="first-page-logo1">
+           <div class="info1">
+           <h1>ABC 234</h1>
+           <p>We are the best web developement <br> company in the world</p>
+        </div>
+            </div>
+            <div class="first-page-last-part">
+                <h2>Comming soon </h2>
+                <h3>SKIP</h3>
+            </div>
+        </div>
+        <div class="right-side1">
+            <img src="images/veme-blockchain-app-developed.png" data-aos="slide-up"  class="images6"  height="500px"  alt="1">
+            <img src="images/veme-app-ui-design.png" class="images5" data-aos="slide-down"   height="500px" alt="2">
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="first-page">
+        <div class="left-side3">
+            <div class="first-page-info3">
+                <h4 data-aos="slide-right">Powered by adavance</h4>
+                <h1 data-aos="slide-right">NASA</h1>
+                <h4 data-aos="slide-right">Algorithm</h4>
+            </div>
+            <div class="first-page-logo">
+           <div class="info3">
+           <h1>ABC 345</h1>
+           <p>We are the best <br> web developement <br> company in the world</p>
+        </div>
+            </div>
+            <div class="first-page-last-part">
+                <h2>Comming soon </h2>
+                <h3>SKIP</h3>
+            </div>
+        </div>
+        <div class="right-side3">
+            <img src="images/nasa-fitness-tracking-mobile-app.png"  class="image21" data-aos="slide-up"   height="550px"  alt="1">
+            <img src="images/measure-total-body-weight-through-fitness-app.png" class="image22"  data-aos="slide-down"   height="550px" alt="2">
+        </div>
+    </div>
+
+
+
+
+
+    <div class="seven-page">
+        <div class="left-side8">
+            <div class="first-page-info8">
+                <h5>Biggest Classified</h5>
+                <h1>East Asia</h1>
+                <h4>Countries</h4>
+            </div>
+            <div class="first-page-logo7">
+                <img src="images/mobile-app-of-the-year-by-entrepreneur.png" width="300px" class="image3" alt="3">
+           <div class="info7">
+           <h1>ABC 23478</h1>
+           <p>We are the best web developement <br> company in the world</p>
+        </div>
+            </div>
+            <div class="first-page-last-part">
+                <h2>Comming soon </h2>
+                <h3>SKIP</h3>
+            </div>
+        </div>
+        <div class="right-side8">
+            <img src="images/melltoo-img2.png"  class="image7" data-aos="slide-up"  height="550px"  alt="1">
+            <img src="images/melltoo-img1.png" class="image8" data-aos="slide-down"   height="550px" alt="2">
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="seven-page">
+        <div class="left-side7">
+            <div class="first-page-info7" >
+                <h5 data-aos="slide-up">Text Headline</h5>
+                <h1 data-aos="slide-up">Text Headline</h1>
+                <h4 data-aos="slide-up">Bottom Headline</h4>
+            </div>
+            <div class="first-page-logo7">
+                
+           <div class="info7">
+           <h1>ABC 567</h1>
+           <p>We are the best AR developement <br> company in the world</p>
+        </div>
+            </div>
+            <div class="first-page-last-part">
+                <h2>View case study <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg> </h2>
+                <h3>SKIP</h3>
+            </div>
+        </div>
+        <div class="right-side7">
+            <img src="images/karavan-social-networking-app-screen.png" class="image9" data-aos="fade-right"   height="400px" alt="2">
+            <img src="images/social-networking-app-case-study.png"  class="image10" data-aos="fade-left"  height="400px"  alt="1">
+            
+            <img src="images/developers-for-social-media-app.png" class="image11" data-aos="fade-right"  height="400px" alt="2">
+            <img src="images/karavan_2.png" class="image12" data-aos="fade-right"  height="400px" alt="2">
+  
+            <img src="images/karavan-social-networking-app-screen-2.png"  class="image13" data-aos="fade-up"  height="400px"  alt="1">
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+    <div class="four-page">
+        <div class="left-side7">
+            <div class="first-page-info7">
+                <h5 data-aos="slide-right">Developing ERP Solution for</h5>
+                <h1 data-aos="slide-right">Text Headline</h1>
+                <h4 data-aos="slide-right">in furniture industry</h4>
+            </div>
+            <div class="first-page-logo7">
+           <div class="info7">
+           <h1>ABC 678</h1>
+           <p> best since 2017 <br> We offer wide range of <br> web developement & app developement</p>
+        </div>
+            </div>
+            <div class="first-page-last-part">
+                <h2>View case study <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg> </h2>
+                <h3>SKIP</h3>
+            </div>
+        </div>
+        <div class="right-side12">
+            <img src="images/erp-app-development-service.png"  class="image14" data-aos="fade-down"  height="600px"  alt="1">
+           
+        </div>
+    </div>
+
+
+
+
+
+    <div class="fourth-page">
+        <div class="left-side4">
+            <div class="first-page-info4">
+                <h5 data-aos="slide-right">Redefining</h5>
+                <h1 data-aos="slide-right">UX Stratagy</h1>
+                <h4 data-aos="slide-right">and UI Design</h4>
+            </div>
+            <div class="first-page-logo1">
+           <div class="info1">
+           <h1>ABC 456</h1>
+           <p>We are the best web developement <br> company in the world</p>
+        </div>
+            </div>
+            <div class="first-page-last-part">
+                <h2>Comming soon </h2>
+                <h3>SKIP</h3>
+            </div>
+        </div>
+        <div class="right-side4">
+            <img src="images/pizza_box.png"  class="image16"  height="200px"  data-aos="fade-up" alt="1">
+            <img src="images/ux-strategy-for-mobile-app-devlopment.png" class="image17" data-aos="fade-down"    height="500px" alt="2">
+            <img src="images/dominos-bread.png"  class="image18"  height="300px"data-aos="fade-left"   alt="1">
+            <img src="images/domi-img1.png" class="image19"   height="400px" data-aos="fade-right"  alt="2">
+            <img src="images/dominos-bread1.png" class="image20"   height="200px" data-aos="fade-down"  alt="2">
+
+        </div>
+    </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:20,
+        duration:2000
+      });
+    </script>
+
+</body>
+</html>
